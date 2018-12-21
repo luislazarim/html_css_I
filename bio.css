@@ -1,13 +1,18 @@
-﻿body {
+﻿y {
 	font-size: 120%;
 	background-color: rgb(255,255,255);
 }
 main a {
     color: #851944;
 }
-aside a {
-    color: inherit; /* usa a cor da tag pai, nesse caso será da MAIN */
-    font-family: "Open Sans Condensed", sans-serif;
+main p{
+	line-height: 1.5; /* alinhamento entre linhas (1.5 do px da fonte)*/
+}
+p a{
+	text-decoration: none
+}
+article a{
+	text-decoration: none
 }
 main h1 {
 /* espaço = dentro */	
@@ -16,11 +21,20 @@ main h1 {
 	color: #fafffa; /* cor definida por cÃ³digo hexadecimal segundo W3C*/	
 	text-align: center;	
 	font-family: "Times New Roman", serif;
+	padding: 20px;
+	margin: 0;
+	border-bottom: 10px solid black;
+}
+main div{
+	width: 720px; /* define o espaço onde estaram os elementos*/
+	margin-left: auto; /* centralizando os elementos */
+	margin-right: auto;
 }
 
 h2 {
 	font-size: 30px;
 	font-family: "Times New Roman", serif;
+	line-height: 2;
 }
 
 p {
@@ -30,17 +44,45 @@ p {
 }
 
 blockquote {
-	background-color: #D9E5E3; 
+	background-color: #D9E5E3;
+	padding: 16px; /*controla o espaço interno do elemento*/
+	border: 10px solid #C2CCCA;	/* controla o contorno do elemento: tamanho, tipo de linha e cor*/ 
+	border-bottom-color: #333;
+	border-right-color: #FFF;
+	width: 250px; /* por padrão, isso se referi ao conteúdo */
+	box-sizing: border-box; /* especifica ao que o tamanho width esta se referindo*/
+	margin: 0; /* controla o espaço externo do elemento, margem do navegador*/
 }
 
 aside {
 	background-color: #FE9A2E;
 	color: #F2FFFC;
+	text-align: center;
 }
+
 nav a {
 	color: #F2FFFC;
+	text-decoration: none;
 }
+
+aside a {
+    color: inherit; /* usa a cor da tag pai, nesse caso será da MAIN */
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
 footer {
-	background-color: rgb(0,0,0);
-	color: #F2FFFC;
+	background-color: rgb(0, 0, 0);
+	color: white;
 }
+
+/*
+
+A propriedade margin controla o espaço entre elementos.
+
+A propriedade padding controla o espaço entre o conteúdo de um elemento e sua borda.
+
+As propriedades width e height controlam apenas o tamanho de um elemento, e não afetam o espaçamento entre esse elemento e seus vizinhos. Já a propriedade box-sizing controla apenas como a largura e a altura de um elemento deve ser calculada.
+
+Por fim, a propriedade line-height controla apenas a altura entre as linhas de texto da página, não afetando a distância entre elementos.
+
+*/
