@@ -13,12 +13,32 @@ nav h1{
 	font-size: 25px;
 }
 
+article a{
+	color: rgb(0,0,0);
+}
+
 aside a {
     color: inherit; /* usa a cor da tag pai, nesse caso será da MAIN */
     font-family: "Open Sans Condensed", sans-serif;
 }
 
+.icones_sociais li{
+/* . = seletor de class */
+	display: inline-block;
+	margin-top: 20px;
+}
+
+/*#icones_sociais li{
+# = seleciona o id  
+	display: inline-block;  display server para definir posicionamento referente a tags
+			 inline-block permite mudar altura e largura de elementos inline
+	margin-top: 20px;
+} */
+
 footer {
 	background-color: rgb(0, 0, 0);
 	color: white;
+}
+.rodape_artigo {
+	background-color: #FE9A2E;
 }

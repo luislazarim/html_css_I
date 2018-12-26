@@ -24,6 +24,19 @@ main h1 {
 	padding: 20px;
 	margin: 0;
 	border-bottom: 10px solid black;
+
+	/*
+
+A propriedade margin controla o espaço entre elementos.
+
+A propriedade padding controla o espaço entre o conteúdo de um elemento e sua borda.
+
+As propriedades width e height controlam apenas o tamanho de um elemento, e não afetam o espaçamento entre esse elemento e seus vizinhos. Já a propriedade box-sizing controla apenas como a largura e a altura de um elemento deve ser calculada.
+
+Por fim, a propriedade line-height controla apenas a altura entre as linhas de texto da página, não afetando a distância entre elementos.
+
+*/
+
 }
 main div{
 	width: 720px; /* define o espaço onde estaram os elementos*/
@@ -54,15 +67,3 @@ blockquote {
 	box-sizing: border-box; /* especifica ao que o tamanho width esta se referindo*/
 	margin: 0; /* controla o espaço externo do elemento, margem do navegador*/
 }
-
-/*
-
-A propriedade margin controla o espaço entre elementos.
-
-A propriedade padding controla o espaço entre o conteúdo de um elemento e sua borda.
-
-As propriedades width e height controlam apenas o tamanho de um elemento, e não afetam o espaçamento entre esse elemento e seus vizinhos. Já a propriedade box-sizing controla apenas como a largura e a altura de um elemento deve ser calculada.
-
-Por fim, a propriedade line-height controla apenas a altura entre as linhas de texto da página, não afetando a distância entre elementos.
-
-*/
