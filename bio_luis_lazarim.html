@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html> <!-- distinção entre html, head e body são identações-->
+	
+	<head> <!--meta informações (tag) para o navegador-->
+		<meta charset="utf-8">
+		<title>Biografia - Luis Eduardo Lazarim</title>
+		<link rel="icon" href="favicon.png">
+		<!-- atributo é o que vem depois da tag-->
+		<link rel="stylesheet" type="text/css" href="reset.css"> <!--anula as propriedades padrão do navegador, tem que servir como base para o meu arquivo css, por isso vem antes-->
+		<link rel="stylesheet" type="text/css" href="body_main.css">
+		<link rel="stylesheet" type="text/css" href="aside_footer.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+	</head>
+	
+	<body>	<!--conteúdo para o usuário-->
+		<!--<header></header> essa tag serve para dividir e criar um rodateto ou nav na parte superior da página-->
+		<main> <!-- tag recente que serve para agregar semântica, para acessibilidade e usabilidade -->
+			<h1>Sobre mim</h1>
+			<div>
+				<p>Moro em Francisco Morato, municipio do estado de <em>São Paulo</em>, formado em bacharel de ciências biológicas pela Universidade Paulista, técnico de administração empresarial pela ETEC.</p> 
+				<p>Atualmente, estudo na <a href="http://www.alura.com.br">Alura</a>, com foco em <strong>engenharia de Front-end, programação, desenvolvimento Java e administração de rede</strong>, também cursando análises e desenvolvimento de sistema, superior técnologo no modo EaD, na Universidade Paulista.</p>
+				<p>Tenho interesse em me aperfeiçoar para atuar na área da biotecnologia, bioinformatica e divulgação cientifica, mas também, disposto a atuar em diversas áreas afim de adquirir experiencia para alcançar esse objetivo. </p>
+
+				<h2>Como trabalho</h2>
+
+				<p>Trabalho como técnico de laboratório em universidade, atualmente posso dizer que prezo pela organização, um ambiente metódico e aperfeiçoamente de processos. É isso que me deu a visão de equilibrar tempo e eficiencia.</p>
+				<p>Como responsável pela dinâmica das aulas, me exigiu proatividade, flexibilidade e compreensão, para assim atender e melhorar as expectativas de professores e alunos. </p>
+				<p>Além disso, nos bastidores do meu trabalho, as coisas são um pouco mais complicadas, há necessidade de ir atrás de material para executar o trabalho, improvisar para conseguir alcançar um objetivo e, quase sempre, sozinho e na necessidade de paciência.</p>
+				<p>O que tenho a dizer? Aço se forja com ferro, fogo e água, só sinto que foi na dificuldade que cresci como pessoa e profissional. Avante, arrisco, experimento e interpreto resultado, e da falha surge o acerto, assim sigo meu trabalho e vida, erro para aprender, aprendo para viver!</p> 
+			
+				<h2>Experiencia</h2>
+
+				<blockquote>
+					<p>Realizou projeto de sinalização de dano ao DNA, focando em biologia molecular, utilizando métodos de bioquimica e ferramentas de biotécnologia e bioinformátiva</p>
+					<cite>Butantan, Fapesp</cite>
+				</blockquote>
+
+				<p>Minha profissão começou na carreira de estoquista, com objetivo de organizar, controlar e dispor diversos materiais para construção, seguido de promoção para vendedor. Como foi isso? Muito informativo, senti a mudança de perspectiva de um cargo para o outro, a importância que um exersse sobre o outro...</p>
+
+				<h2>Comunidade</h2>
+				<p>Visite o <a href="blog.html">blog</a>.</p>		
+			</div>
+		</main>
+
+		<img src="eu_filho.jpg" alt="foto de Luis Eduardo e seu filho, Caio Leon"> <!-- html semântico é a colocação de informações claras e concisas -->
+		<aside>
+			<nav> <!-- tag recente que serve para agregar semântica -->
+				<h1>Luis Eduardo Lazarim</h1>
+				<ul> <!-- Tag para cria lista de qualquer coisa -->
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portifolio.html">Portifólio</a></li>
+					<li><a href="bio.html">Sobre mim</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contatos.html">Contatos</a></li>
+				</ul>
+			</nav>
+			<ul class="icones_sociais"> <!-- class cria uma classe de elemento, e pode se repetir. Classes dão flexibilidade ao código e também podem ser colocado mais de uma classe em uma class-->
+				<li><a href="https://github.com/luislazarim"><img src="github.png" alt="github"></a></li>
+				<li><a href="https://www.linkedin.com/in/luis-eduardo-lazarim-934845112/"><img src="linkedin.png" alt="linkedin"></a></li>
+			</ul>
+
+			<!--<ul id="icones_sociais"> id da nome a um elemento, e não se repetir
+					<li><a href="https://github.com/luislazarim"><img src="github.png" alt="github"></a></li>
+					<li><a href="https://www.linkedin.com/in/luis-eduardo-lazarim-934845112/"><img src="linkedin.png" alt="linkedin"></a></li>
+			</ul> -->
+
+		</aside>
+
+		<footer> <!-- tag de divisão para rodapé -->
+			&copy; Luis Lazarim 2018
+		</footer>
+
+	</body>
+
+</html>
