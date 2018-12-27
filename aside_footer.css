@@ -1,4 +1,48 @@
-aside {
+/*--------------------------MENU RODATETO -------------------------------*/
+/*
+<header class="pagina-inicial cabecalho-principal">
+nesse caso há duas classe de uma mesma tag, ideal para bordar dois aspectos de uma mesma tag
+*/
+/*--------------------------- HOMEMENU ---------------------------------*/
+
+.homemenu {
+	background-color: #FE9A2E;
+	color: #F2FFFC;
+	text-align: center;
+}
+
+.homenavegador a{
+	color: #F2FFFC;
+	text-decoration: none;
+	margin: 10px;
+}
+.homenavegador h1{
+	font-size: 25px;
+}
+
+.homemenu a {
+    color: inherit; /* usa a cor da tag pai, nesse caso será da MAIN */
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+.homeicones_sociais li{
+/* . = seletor de class */
+	display: inline-block;
+	margin-top: 20px;
+}
+
+/*
+#icones_sociais li{
+ID é mais especifico que class
+# = seleciona o id  
+	display: inline-block;  display server para definir posicionamento referente a tags
+			 inline-block permite mudar altura e largura de elementos inline
+	margin-top: 20px;
+} */
+
+/*============================ BLOGMENU =======================================*/
+
+.blogmenu {
 	background-color: #FE9A2E;
 	color: #F2FFFC;
 	text-align: center;
@@ -13,32 +57,30 @@ nav h1{
 	font-size: 25px;
 }
 
-article a{
-	color: rgb(0,0,0);
-}
-
-aside a {
+.blogmenu a {
     color: inherit; /* usa a cor da tag pai, nesse caso será da MAIN */
     font-family: "Open Sans Condensed", sans-serif;
 }
 
-.icones_sociais li{
+.blogicones_sociais li{
 /* . = seletor de class */
 	display: inline-block;
 	margin-top: 20px;
 }
 
-/*#icones_sociais li{
-# = seleciona o id  
-	display: inline-block;  display server para definir posicionamento referente a tags
-			 inline-block permite mudar altura e largura de elementos inline
-	margin-top: 20px;
-} */
+/* ------------------------ RODAPÉ ------------------------------------*/
 
-footer {
+.homerodape {
+	background-color: rgb(0, 0, 0);
+	color: white;
+}
+
+.blogrodape {
 	background-color: rgb(0, 0, 0);
 	color: white;
 }
 .rodape_artigo {
 	background-color: #FE9A2E;
+	height: 40px;
+	padding-top: 20px;
 }
