@@ -19,7 +19,7 @@
 		<!-- tag recente que serve para agregar semântica, para acessibilidade e usabilidade -->
 		<main class="homepage"> 
 			<h1>Sobre mim</h1>
-			<div>
+			<div class="homebloco">
 				<p>Moro em Francisco Morato, municipio do estado de <em>São Paulo</em>, formado em bacharel de ciências biológicas pela Universidade Paulista, técnico de administração empresarial pela ETEC.</p> 
 				<p>Atualmente, estudo na <a href="http://www.alura.com.br">Alura</a>, com foco em <strong>engenharia de Front-end, programação, desenvolvimento Java e administração de rede</strong>, também cursando análises e desenvolvimento de sistema, superior técnologo no modo EaD, na Universidade Paulista.</p>
 				<p>Tenho interesse em me aperfeiçoar para atuar na área da biotecnologia, bioinformatica e divulgação cientifica, mas também, disposto a atuar em diversas áreas afim de adquirir experiencia para alcançar esse objetivo. </p>
@@ -45,28 +45,30 @@
 			</div>
 		</main>
 
-		<img src="eu_filho.jpg" alt="foto de Luis Eduardo e seu filho, Caio Leon"> <!-- html semântico é a colocação de informações claras e concisas -->
+		<img class="foto_perfil" src="eu_filho.jpg" alt="foto de Luis Eduardo e seu filho, Caio Leon"> <!-- html semântico é a colocação de informações claras e concisas -->
 		<aside class="homemenu">
+			
 			<nav class="homenavegador"> <!-- tag recente que serve para agregar semântica -->
 				<h1>Luis Eduardo Lazarim</h1>
 				<ul> <!-- Tag para cria lista de qualquer coisa -->
 					<li><a href="index.html">Home</a></li>
 					<li><a href="portifolio.html">Portifólio</a></li>
-					<li><a href="bio.html">Sobre mim</a></li>
+					<li><a href="home_luis_lazarim.html">Sobre mim</a></li>
 					<li><a href="blog.html">Blog</a></li>
 					<li><a href="contatos.html">Contatos</a></li>
 				</ul>
 			</nav>
+			
 			<ul class="homeicones_sociais"> <!-- class cria uma classe de elemento, e pode se repetir. Classes dão flexibilidade ao código e também podem ser colocado mais de uma classe em uma class-->
+				<li><a class="github" href="https://github.com/luislazarim">github</a></li>
+				<li><a class="linkedin" href="https://www.linkedin.com/in/luis-eduardo-lazarim-934845112/">linkedin</a></li>
+				
+				<!-- Essa é uma forma de fazer, mas não tão semântico
 				<li><a href="https://github.com/luislazarim"><img src="github.png" alt="github"></a></li>
-				<li><a href="https://www.linkedin.com/in/luis-eduardo-lazarim-934845112/"><img src="linkedin.png" alt="linkedin"></a></li>
+				<li><a href="https://www.linkedin.com/in/luis-eduardo-lazarim-934845112/"><img src="linkedin.png" alt="linkedin"></a></li> 
+				-->
+			
 			</ul>
-
-			<!--<ul id="icones_sociais"> id da nome a um elemento, e não se repetir
-					<li><a href="https://github.com/luislazarim"><img src="github.png" alt="github"></a></li>
-					<li><a href="https://www.linkedin.com/in/luis-eduardo-lazarim-934845112/"><img src="linkedin.png" alt="linkedin"></a></li>
-			</ul> -->
-
 		</aside>
 
 		<footer class="homerodape"> <!-- tag de divisão para rodapé -->
