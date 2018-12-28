@@ -1,4 +1,4 @@
-﻿/*--------------- Corpo -----------------------------*/
+/*--------------- Corpo -----------------------------*/
 
 body {
 	font-size: 120%;
@@ -47,6 +47,8 @@ Por fim, a propriedade line-height controla apenas a altura entre as linhas de t
 	width: 720px; /* define o espaço onde estaram os elementos*/
 	margin-left: auto; /* centralizando os elementos */
 	margin-right: auto;
+	padding: 20px;
+	padding-bottom: 60px;
 }
 
 h2 {
@@ -109,9 +111,9 @@ p {
 	margin: 20px;
 }
 
-/* -------------------------------- HOME--------------------------------------- */
+/* ---------------------------- HOME - Posicionamento --------------------------------- */
 
-.homepage_cite {
+.butantan {
 	background-color: #D9E5E3;
 	padding: 10px; /*controla o espaço interno do elemento*/
 	border: 10px solid #C2CCCA;	/* controla o contorno do elemento: tamanho, tipo de linha e cor*/ 
@@ -119,13 +121,13 @@ p {
 	border-right-color: #FFF;
 	width: 280px; /* por padrão, isso se referi ao conteúdo */
 	box-sizing: border-box; /* especifica ao que o tamanho width esta se referindo*/
-	margin: 0; /* controla o espaço externo do elemento, margem do navegador*/
+	margin: 20px; /* controla o espaço externo do elemento, margem do navegador*/
 	float: right; /* faz um elemento flutuar na página e posicionar */
 }
-.homepage_cite p {
+.butantan p {
 	margin-left: 0;
 }
-.homepage_cite cite {
+.butantan cite {
 	float: right;
 	font-style: italic;
 }

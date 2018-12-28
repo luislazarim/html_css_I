@@ -9,6 +9,8 @@ nesse caso há duas classe de uma mesma tag, ideal para bordar dois aspectos de 
 	background-color: #FE9A2E;
 	color: #F2FFFC;
 	text-align: center;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
 }
 
 .homenavegador a{
@@ -57,15 +59,24 @@ ID é mais especifico que class
 
 .homemenu, .foto_perfil {
 	float: right;
-	width: 15%;
 	box-sizing: border-box;
 }
 .homepage {
 	float: left;
-	width: 85%;
+	width: 80%;
 }
 .homerodape {
 	clear: both;
+}
+.foto_perfil {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.homemenu {
+	position: relative;
+	top: 280px;
+	width: 20%;
 }
 
 /*============================ BLOGMENU =======================================*/
@@ -104,6 +115,9 @@ nav h1{
 .homerodape {
 	background-color: rgb(0, 0, 0);
 	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 .blogrodape {
@@ -115,3 +129,17 @@ nav h1{
 	height: 40px;
 	padding-top: 20px;
 }
+
+/*Quando usamos a declaração position: 
+relative, as propriedades top, left, bottom e right fazem com que o elemento se desloque com relação à sua posição original, tanto quanto desejarmos. 
+Ou seja, top: 10px vai fazer com que o elemento desloque 10 pixels para baixo.*/
+
+/* para montagem de diretórios, dicas e exemplos
+.twitter {
+    background-image: url(../img/twitter.png);
+}
+<img src="img/eu.jpg" alt="Minha foto">
+*/
+
+/*existe a tag <figure> para indicar a figura com a legenda; a imagem e a legenda ficam dentro dela.
+No caso da legenda, ela fica em um elemento <figcaption>.*/
