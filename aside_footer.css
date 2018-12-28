@@ -18,6 +18,7 @@ nesse caso há duas classe de uma mesma tag, ideal para bordar dois aspectos de 
 }
 .homenavegador h1{
 	font-size: 25px;
+	margin-bottom: 20px;
 }
 
 .homemenu a {
@@ -26,12 +27,24 @@ nesse caso há duas classe de uma mesma tag, ideal para bordar dois aspectos de 
 }
 
 .homeicones_sociais li{
-/* . = seletor de class */
 	display: inline-block;
 	margin-top: 20px;
 }
+.homeicones_sociais a{
+	width: 40px;
+	height: 40px;
+	display: inline-block; /*display: inline-block;  display server para definir posicionamento referente a tags*/
+	text-indent: -9999px; /* cuida do recuo do texto (-Npx = recuo regativo) */
+}
+.github {
+	background-image: url(github.png);
+}
+.linkedin {
+	background-image: url(linkedin.png);
+}
 
 /*
+. = seletor de class
 #icones_sociais li{
 ID é mais especifico que class
 # = seleciona o id  
@@ -39,6 +52,21 @@ ID é mais especifico que class
 			 inline-block permite mudar altura e largura de elementos inline
 	margin-top: 20px;
 } */
+
+/*----------------------HOMEMENU - posicionamento ------------------------------*/
+
+.homemenu, .foto_perfil {
+	float: right;
+	width: 15%;
+	box-sizing: border-box;
+}
+.homepage {
+	float: left;
+	width: 85%;
+}
+.homerodape {
+	clear: both;
+}
 
 /*============================ BLOGMENU =======================================*/
 
@@ -62,6 +90,9 @@ nav h1{
     font-family: "Open Sans Condensed", sans-serif;
 }
 
+.blognavegador ul {
+	margin-top: 20px;
+}
 .blogicones_sociais li{
 /* . = seletor de class */
 	display: inline-block;
