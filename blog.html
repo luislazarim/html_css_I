@@ -15,24 +15,19 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>
-				Blog
-				Luis Eduardo Lazarim
-			</h1>
-			<aside class="blogmenu"> <!-- Complementa como conteudo auxiliar -->
-				<nav class="blognavegador"> <!-- tag recente que serve para agregar semântica -->
-					<ul> <!-- Tag para cria lista de qualquer coisa -->
-						<li><a href="home_luis_lazarim.html">Sobre mim</a></li>
-						<li><a href="portifolio.html">Portifólio</a></li> <!--li é uma tag que cria links-->
-						<li><a href="contatos.html">Contatos</a></li>
-					</ul>
-				</nav>
-				<ul class="blogicones_sociais">
-					<li><a href="https://github.com/luislazarim"><img src="..\img\github.png" alt="github"></a></li>
-					<li><a href="https://www.linkedin.com/in/luis-eduardo-lazarim-934845112/"><img src="..\img\linkedin.png" alt="linkedin"></a></li>
+		<header class="cabecalio">
+			<h1 class="titulo">Blog</h1>
+			<nav class="menuprincipal">
+				<ul class="menu">
+					<li><a href="home_luis_lazarim.html">Sobre mim</a></li>
+					<li><a href="portifolio.html">Portifólio</a></li>
+					<li><a href="contatos.html">Contato</a></li>		
 				</ul>
-			</aside>
+				<ul class="icones_sociais">
+					<li><a class="github" href="https://github.com/luislazarim">github</a></li>
+					<li><a class="linkedin" href="https://www.linkedin.com/in/luis-eduardo-lazarim-934845112/">linkedin</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main class="blogpage">
 			<div class="blogbloco">
@@ -68,7 +63,7 @@
         	</div>
 		</main>
 
-		<img src="..\img\eu_filho.jpg" alt="foto de Luis Eduardo e seu filho, Caio Leon">
+		<img class="foto_perfil" src="..\img\eu_filho.jpg" alt="foto de Luis Eduardo e seu filho, Caio Leon">
 
 		<footer class="blogrodape"> 
 			&copy; Luis Lazarim 2018
