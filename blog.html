@@ -6,17 +6,35 @@
 	<head>		
 		<title>Blog - Luis Eduardo Lazarim</title>
 		<meta charset="utf-8">		
-		<link rel="icon" href="favicon.png">
-		<link rel="stylesheet" type="text/css" href="reset.css">
-		<link rel="stylesheet" type="text/css" href="body_main.css">
-		<link rel="stylesheet" type="text/css" href="aside_footer.css">
+		<link rel="icon" href="../img/favicon.png">
+		<link rel="stylesheet" type="text/css" href="..\css\reset.css">
+		<link rel="stylesheet" type="text/css" href="..\css\site_luis_lazarim.css">
+		<link rel="stylesheet" type="text/css" href="..\css\blog_main.css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
 	</head>
 
 	<body>
+		<header>
+			<h1>
+				Blog
+				Luis Eduardo Lazarim
+			</h1>
+			<aside class="blogmenu"> <!-- Complementa como conteudo auxiliar -->
+				<nav class="blognavegador"> <!-- tag recente que serve para agregar semântica -->
+					<ul> <!-- Tag para cria lista de qualquer coisa -->
+						<li><a href="home_luis_lazarim.html">Sobre mim</a></li>
+						<li><a href="portifolio.html">Portifólio</a></li> <!--li é uma tag que cria links-->
+						<li><a href="contatos.html">Contatos</a></li>
+					</ul>
+				</nav>
+				<ul class="blogicones_sociais">
+					<li><a href="https://github.com/luislazarim"><img src="..\img\github.png" alt="github"></a></li>
+					<li><a href="https://www.linkedin.com/in/luis-eduardo-lazarim-934845112/"><img src="..\img\linkedin.png" alt="linkedin"></a></li>
+				</ul>
+			</aside>
+		</header>
 		<main class="blogpage">
-			<h1>Blog</h1>
 			<div class="blogbloco">
 				<article> <!-- representa um elemento que, por si só, já tem sentido completo, ou seja, cada um deles representa um bloco único de conteúdo, de artigo de post -->
 	                <h2>O essencial de design responsivo</h2>
@@ -50,24 +68,7 @@
         	</div>
 		</main>
 
-		<img src="eu_filho.jpg" alt="foto de Luis Eduardo e seu filho, Caio Leon">
-
-		<aside class="blogmenu"> <!-- Complementa como conteudo auxiliar -->
-			<nav class="blognavegador"> <!-- tag recente que serve para agregar semântica -->
-				<h1>Luis Eduardo Lazarim</h1>
-				<ul> <!-- Tag para cria lista de qualquer coisa -->
-					<li><a href="index.html">Home</a></li> <!-- tag li cria tópicos -->
-					<li><a href="portifolio.html">Portifólio</a></li>
-					<li><a href="home_luis_lazarim.html">Sobre mim</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="contatos.html">Contatos</a></li>
-				</ul>
-			</nav>
-			<ul class="blogicones_sociais">
-				<li><a href="https://github.com/luislazarim"><img src="github.png" alt="github"></a></li>
-				<li><a href="https://www.linkedin.com/in/luis-eduardo-lazarim-934845112/"><img src="linkedin.png" alt="linkedin"></a></li>
-			</ul>
-		</aside>
+		<img src="..\img\eu_filho.jpg" alt="foto de Luis Eduardo e seu filho, Caio Leon">
 
 		<footer class="blogrodape"> 
 			&copy; Luis Lazarim 2018
