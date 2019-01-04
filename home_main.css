@@ -1,0 +1,197 @@
+/* ---------------------- HOME -------------------------- */
+
+.homepage a {
+    color: #851944;
+}
+
+.homepage p{
+	line-height: 1.5; /* alinhamento entre linhas (1.5 do px da fonte)*/
+}
+
+p a{
+	text-decoration: none
+}
+
+.homepage h1 {
+/* espaço = dentro */	
+	font-size: 60px;
+	background-color: #FF8000; /* cor definida por decimal (r[red],g[green],b[blue])*/	
+	color: #fafffa; /* cor definida por cÃ³digo hexadecimal segundo W3C*/	
+	text-align: center;	
+	font-family: "Times New Roman", serif;
+	padding: 20px;
+	margin: 0;
+	border-bottom: 10px solid black;
+	text-transform: uppercase; /* torna um texto todo maiusculo */
+}
+
+	/*
+
+A propriedade margin controla o espaço entre elementos.
+
+A propriedade padding controla o espaço entre o conteúdo de um elemento e sua borda.
+
+As propriedades width e height controlam apenas o tamanho de um elemento, e não afetam o espaçamento entre esse elemento e seus vizinhos. Já a propriedade box-sizing controla apenas como a largura e a altura de um elemento deve ser calculada.
+
+Por fim, a propriedade line-height controla apenas a altura entre as linhas de texto da página, não afetando a distância entre elementos.
+
+*/
+
+.homebloco {
+	width: 720px; /* define o espaço onde estaram os elementos*/
+	margin-left: auto; /* centralizando os elementos */
+	margin-right: auto;
+	padding: 20px;
+	padding-bottom: 60px;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: "Times New Roman", serif;
+	line-height: 2;
+	clear: right; /* não deixa nenhuma influtuação interferir nesse elemento */
+}
+
+p {
+	font-size: 15px;
+	font-family: "Arial", sans-serif; 
+	text-align: justify;
+	margin: 20px;
+}
+
+/* ---------------------------- HOME - Posicionamento --------------------------------- */
+
+.butantan {
+	background-color: #D9E5E3;
+	padding: 10px; /*controla o espaço interno do elemento*/
+	border: 10px solid #C2CCCA;	/* controla o contorno do elemento: tamanho, tipo de linha e cor*/ 
+	border-bottom-color: #333;
+	border-right-color: #FFF;
+	width: 280px; /* por padrão, isso se referi ao conteúdo */
+	box-sizing: border-box; /* especifica ao que o tamanho width esta se referindo*/
+	margin: 20px; /* controla o espaço externo do elemento, margem do navegador*/
+	float: right; /* faz um elemento flutuar na página e posicionar */
+}
+.butantan p {
+	margin-left: 0;
+}
+.butantan cite {
+	float: right;
+	font-style: italic;
+}
+
+/* Float serve para fazer enquadramento de elementos na página, enquanto o Clear serve para impedir enquadramentos na página*/
+
+/*--------------------------- HOMEMENU ---------------------------------*/
+
+.homemenu {
+	background-color: #FF8000;
+	color: #F2FFFC;
+	text-align: center;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+}
+
+.homenavegador a{
+	color: #F2FFFC;
+	text-decoration: none;
+	margin: 10px;
+}
+.homenavegador li{
+	padding-bottom: 10px;
+}
+
+.homenavegador h1{
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.homemenu a {
+    color: inherit; /* usa a cor da tag pai, nesse caso será da MAIN */
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+.homeicones_sociais li{
+	display: inline-block;
+	margin-top: 20px;
+}
+.homeicones_sociais a{
+	width: 40px;
+	height: 40px;
+	display: inline-block; /*display: inline-block;  display server para definir posicionamento referente a tags*/
+	text-indent: -9999px; /* cuida do recuo do texto (-Npx = recuo regativo) */
+}
+.github {
+	background-image: url(../img/github.png);
+}
+.linkedin {
+	background-image: url(../img/linkedin.png);
+}
+
+/*
+. = seletor de class
+#icones_sociais li{
+ID é mais especifico que class
+# = seleciona o id  
+	display: inline-block;  display server para definir posicionamento referente a tags
+			 inline-block permite mudar altura e largura de elementos inline
+	margin-top: 20px;
+} */
+
+/*----------------------HOMEMENU - posicionamento ------------------------------*/
+
+.homemenu, .foto_perfil {
+	float: right;
+	box-sizing: border-box;
+}
+.homepage {
+	float: left;
+	width: 80%;
+}
+.homerodape {
+	clear: both;
+}
+.foto_perfil {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.homemenu {
+	position: relative;
+	top: 280px;
+	width: 20%;
+}
+
+/* ------------------------ HOME RODAPÉ ------------------------------------*/
+
+.homerodape {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.blogrodape {
+	background-color: rgb(0, 0, 0);
+	color: white;
+}
+.rodape_artigo {
+	background-color: #FE9A2E;
+	height: 40px;
+	padding-top: 20px;
+}
+
+/*Quando usamos a declaração position: 
+relative, as propriedades top, left, bottom e right fazem com que o elemento se desloque com relação à sua posição original, tanto quanto desejarmos. 
+Ou seja, top: 10px vai fazer com que o elemento desloque 10 pixels para baixo.*/
+
+/* para montagem de diretórios, dicas e exemplos
+.twitter {
+    background-image: url(../img/twitter.png);
+}
+<img src="img/eu.jpg" alt="Minha foto">
+*/
+
+/*existe a tag <figure> para indicar a figura com a legenda; a imagem e a legenda ficam dentro dela.
+No caso da legenda, ela fica em um elemento <figcaption>.*/
